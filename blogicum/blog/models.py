@@ -45,9 +45,6 @@ class Location(CrepubModel):
         verbose_name = 'местоположение'
         verbose_name_plural = 'Местоположения'
 
-    def __str__(self):
-        return self.title
-
 
 class Post(CrepubModel):
     title = models.CharField(max_length=256, verbose_name='Заголовок')
